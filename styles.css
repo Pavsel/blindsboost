@@ -1,0 +1,175 @@
+@import "reset.css";
+@import "utility.css";
+
+.nav-list {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    gap: clamp(1rem, 3vw, 5rem);
+    align-items: center;
+    justify-content: end;
+
+}
+
+@media (max-width: 60em) {
+    .nav-list {
+        justify-content: center;
+    }
+}
+
+p {
+    max-width: 35ch;
+}
+
+.nav-list a {
+    position: relative;
+    text-decoration: none;
+    white-space: nowrap;
+
+    transition: all 0.3s;
+}
+
+
+.nav-list a::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: var(--clr-primary);
+
+    bottom: -10%;
+
+    transform: scaleX(0);
+
+    transition: all 0.2s;
+}
+
+.nav-list a:hover {
+    color: var(--clr-primary)
+}
+
+.nav-list a:hover::before {
+    transform: scaleX(1);
+}
+
+video {
+    width: 90%;
+    border-radius: 1rem;
+}
+
+/*Hero*/
+
+.hero {
+    align-items: center;
+}
+
+.hero img {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.divider {
+    background: var(--clr-neutral-dark);
+    height: 4px;
+    width: 80%;
+    margin-inline: auto;
+}
+
+
+.feature-item img,
+.small-image {
+    width: 60%;
+    margin-inline: auto;
+}
+
+@media (min-width: 60em) {
+    .feature-item {
+        grid-auto-columns: 1.3fr 1fr;
+        gap: var(--sz-padding-block-medium);
+    }
+
+    .feature-item img {
+        width: inherit;
+    }
+}
+
+
+.fade-on-load {
+    animation: fade-in var(--anim-time) ease-out;
+    animation-delay: var(--delay, 0s);
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    0% {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.load {
+    position: fixed;
+    background: var(--clr-neutral-dark);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 5;
+    background-image: url("assets/bg-pattern.png");
+
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    animation: scale-out ease-in-out 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scale-out {
+    0% {
+        transform: scale(100%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(130%);
+        opacity: 0;
+    }
+}
+
+
+.cta-main {
+    outline: 4px solid var(--clr-accent);
+    outline-offset: 4px;
+    padding-block: 1.2rem;
+    font-size: var(--fs-body);
+
+    /*transition: outline-offset calc(var(--anim-time)/3) ease;*/
+}
+
+
+.cta-main:hover {
+    outline-offset: -5px;
+    outline-color: var(--clr-neutral-dark);
+}
+
+/*On Scroll Anims*/
+.reveal {
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: var(--anim-time) all ease-out var(--delay, 0s);
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
