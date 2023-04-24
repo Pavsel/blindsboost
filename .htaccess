@@ -1,0 +1,3 @@
+Rewrite Engine on
+RewriteRule ^home?$ index.html
+RewriteRule ^case-study?$ case-study.html

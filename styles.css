@@ -1,6 +1,14 @@
 @import "reset.css";
 @import "utility.css";
 
+html,
+body {
+    /*background-color: rebeccapurple;*/
+    /*width: 100%;*/
+    /*min-height: 100%;*/
+    overflow-x: hidden;
+}
+
 .nav-list {
     width: 100%;
     height: 100%;
@@ -53,9 +61,11 @@ p {
     transform: scaleX(1);
 }
 
-video {
+video,
+iframe {
     width: 90%;
     border-radius: 1rem;
+    aspect-ratio: 1920 / 1080;
 }
 
 /*Hero*/
@@ -173,3 +183,20 @@ video {
     opacity: 1;
 }
 
+/*Main Mobile Resize*/
+/*Fonts, Image Sizes, etc.*/
+@media (max-width: 60em) {
+    nav ul {
+        flex-direction: column;
+    }
+
+
+}
+
+@media (max-width: 45em) {
+    .size-up-mobile {
+        width: 100% !important;
+        /*height: 100%;*/
+        /*aspect-ratio: initial;*/
+    }
+}
