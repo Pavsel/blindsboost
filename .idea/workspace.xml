@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d663d522-3bfe-4b0d-b70f-3649e02031a1" name="Changes" comment="fixed footer nav">
+    <list default="true" id="d663d522-3bfe-4b0d-b70f-3649e02031a1" name="Changes" comment="fixed some typos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case.html" beforeDir="false" afterPath="$PROJECT_DIR$/case.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +40,8 @@
       <option name="presentableId" value="Default" />
       <updated>1682394069241</updated>
       <workItem from="1682394075999" duration="2906000" />
-      <workItem from="1682425448750" duration="5962000" />
+      <workItem from="1682425448750" duration="8301000" />
+      <workItem from="1682523632421" duration="1071000" />
     </task>
     <task id="LOCAL-00001" summary="testing #id">
       <created>1682428854941</created>
@@ -62,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682440513007</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixed some typos">
+      <created>1682448302464</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682448302464</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,6 +91,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="testing #id" />
     <MESSAGE value="fixed footer nav" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed footer nav" />
+    <MESSAGE value="fixed some typos" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed some typos" />
   </component>
 </project>
